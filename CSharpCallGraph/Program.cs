@@ -8,8 +8,8 @@ namespace CSharpCallGraph
     {
         static  void Main(string[] args)
         {
-            string clientID = "cde921c5-862c-4264-a450-6daceb46fec5"; // Put the Application ID from above here.
-            string clientSecret = "tdy~UUxbGCWXfD-5r.96u49.i9D3~479p2"; // Put the Client Secret from above here.
+            string clientID = "cde921c5-862c-4264-cccc-6daceb46fec5"; // Put the Application ID from above here.
+            string clientSecret = "tdy~UUxbGCWXfD-5r.cccc.i9D3~479p2"; // Put the Client Secret from above here.
 
             string graphApiResource = "https://graph.microsoft.com";
             Uri microsoftLogin = new Uri("https://login.microsoftonline.com/");
@@ -31,8 +31,8 @@ namespace CSharpCallGraph
                 }));
 
             IGraphServiceUsersCollectionPage users = graphClient.Users.Request().GetAsync().Result;
-            IListColumnsCollectionPage columns = graphClient.Sites["b57886ef-4c2a-4d56-ad29-27266638ac3b,b62d1450-8e6f-4be7-84a3-f6600fd6cc14"].Lists["538191ae-7802-43b5-90ec-c566b4c954b3"].Columns.Request().GetAsync().Result;
-            //_ = graphClient.Sites["b57886ef-4c2a-4d56-ad29-27266638ac3b,b62d1450-8e6f-4be7-84a3-f6600fd6cc14"].Lists["538191ae-7802-43b5-90ec-c566b4c954b3"].Columns;
+            IListColumnsCollectionPage columns = graphClient.Sites["b57886ef-4c2a-4d56-cccc-27266638ac3b,b62d1450-8e6f-4be7-84a3-f6600fd6cc14"].Lists["538191ae-7802-43b5-90ec-c566b4c954b3"].Columns.Request().GetAsync().Result;
+            //_ = graphClient.Sites["b57886ef-4c2a-4d56-cccc-27266638ac3b,b62d1450-8e6f-4be7-84a3-f6600fd6cc14"].Lists["538191ae-7802-43b5-90ec-c566b4c954b3"].Columns;
             // I don't have many users, else I'd have to request the next page of results.
             //foreach (var user in users.CurrentPage)
             //{
